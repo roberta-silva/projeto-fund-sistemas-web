@@ -4,13 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PetShop | Início</title>
+  <title>Início | PetShop</title>
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <h1><a href="./"></a>PetShop</h1>
-    <p>Cuidando dos animais com carinho e qualidade.</p>
     <nav aria-label="Navegação primária">
       <ul>
         <li>
@@ -27,34 +26,70 @@
   </header>
 
   <main>
-    <h2>Bem-vindo ao PetShop!</h2>
-    <p>Somos um petshop dedicado ao bem-estar dos animais. Aqui você encontra produtos de qualidade divididos em três categorias: <a href="produtos.html#acessorios">acessórios</a>acessórios, rações não perecíveis e produtos de higiene e limpeza.</p>
-    <p>Além disso, oferecemos serviços de banho e tosa, com ou sem tele-busca, para maior comodidade do humano.</p>
+    <section>
+      <h2>Bem-vindo ao PetShop!</h2>
+      <p>Cuidamos dos animais com carinho e qualidade.</p>
+
+      <p>Somos um petshop dedicado ao bem-estar dos animais. Aqui você encontra produtos de qualidade divididos em três categorias: <a href="produtos.html#acessorios">acessórios</a>, <a href="./produtos.html#racoes">rações não perecíveis</a> e <a href="./produtos.html#higiene">produtos de higiene e limpeza</a>.<br>
+        Além disso, oferecemos serviços de <a href="./servicos.html">banho e tosa</a>, com ou sem tele-busca, para maior comodidade do humano.</p>
+    </section>
+
+    <section>
+      <h2>Conheça Nossos Produtos</h2>
+      <ul>
+        <li>
+          <a href="./produtos.html#acessorios">
+            <p>Acessórios</p>
+            <div><img src="./acessorios.svg" alt="" width="60"></div>
+          </a>
+        </li>
+
+        <li>
+          <a href="./produtos.html#racoes">
+            <p>Rações não Perecíveis</p>
+            <div><img src="./racao.svg" alt="" width="60"></div>
+          </a>
+        </li>
+
+        <li>
+          <a href="./produtos.html#higiene">
+            <p>Higiene e Limpeza</p>
+            <div><img src="./higiene.svg" alt="" width="60"></div>
+          </a>
+        </li>
+      </ul>
+
+    </section>
   </main>
 
 
   <footer>
-    <p>PetShop</p>
-    <p>Endereço: Rua Ali Perto, 123 - Centro - Cidade/RS</p>
-    <p>Telefone: (51) 999 999 999</p>
-    <a href="mailto:petshop@petshop.com" class="contact-link">
-      petshop@petshop.com
-    </a>
+    <div>
+      <div>
+        <p>PetShop</p>
+        <p>Endereço: Rua Ali Perto, 123 - Centro - Cidade/RS</p>
+        <p>Telefone: (51) 999 999 999</p>
+        <a href="mailto:petshop@petshop.com" class="contact-link">
+          petshop@petshop.com
+        </a>
+      </div>
 
+      <nav aria-label="Links do rodapé">
+        <ul>
+          <li>
+            <a href="./index.html">Início</a>
+          </li>
+          <li>
+            <a href="./produtos.html">Produtos</a>
+          </li>
+          <li>
+            <a href="./servicos.html">Serviços</a>
+          </li>
+        </ul>
+      </nav>
 
-    <nav aria-label="Links do rodapé">
-      <ul>
-        <li>
-          <a href="./index.html">Início</a>
-        </li>
-        <li>
-          <a href="./produtos.html">Produtos</a>
-        </li>
-        <li>
-          <a href="./servicos.html">Serviços</a>
-        </li>
-      </ul>
-    </nav>
+      <a href="#header">Voltar ao topo</a>
+    </div>
 
     <p>PetShop © Todos os direitos reservados</p>
   </footer>
