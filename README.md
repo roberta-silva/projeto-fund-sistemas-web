@@ -1,4 +1,4 @@
-# PetShop - Fase 1
+# PetShop - Fundamentos de Sistemas Web
 
 Projeto acadêmico da disciplina Fundamentos de Sistemas Web.
 
