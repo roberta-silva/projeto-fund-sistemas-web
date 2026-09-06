@@ -1,0 +1,111 @@
+:root {
+  --cor-primaria: #2f6e5b;
+  --cor-primaria-escura: #21503f;
+  --cor-destaque: #e2a33d;
+  --cor-destaque-escura: #c4841f;
+  --cor-fundo: #faf7f0;
+  --cor-fundo-alt: #eef3ea;
+  --cor-texto: #24322c;
+  --cor-texto-suave: #55635c;
+  --cor-borda: #d9d2c2;
+
+  --fonte-titulo: 'Poppins', sans-serif;
+  --fonte-corpo: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--fonte-corpo);
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  color: var(--cor-primaria-escura);
+}
+
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cor-primaria-escura);
+}
+img {
+  max-width: 100%;
+}
+
+/* Link Pular para o conteúdo */
+.link-pular-conteudo {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  z-index: 2000;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--cor-primaria-escura);
+  color: #fff;
+  border-radius: 0 0 0.5rem 0;
+}
+.link-pular-conteudo:focus {
+  left: 0;
+}
+
+/* header */
+.header {
+  background-color: var(--cor-primaria);
+}
+.header a {
+  color: #fff;
+}
+.header .nav-link:hover,
+.header .nav-link:focus {
+  color: var(--cor-destaque);
+}
+
+.header .nav-link.active {
+  color: var(--cor-destaque);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* carrossel */
+.carousel-petshop .carousel-item img {
+  height: 360px;
+  object-fit: cover;
+  filter: brightness(0.75);
+}
+.carousel-petshop .carousel-caption h3 {
+  color: #fff;
+}
+
+/*coneca nossos produtos */
+.item-produto {
+  border: 1px solid var(--cor-borda);
+  background-color: #fff;
+  border-radius: 0.5rem;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+.item-produto:hover,
+.item-produto:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: var(--cor-primaria-escura);
+  color: var(--cor-fundo-alt);
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: var(--cor-destaque);
+}
