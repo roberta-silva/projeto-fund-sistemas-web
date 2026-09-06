@@ -41,26 +41,36 @@
     </div>
   </header>
 
-  <main id="conteudo">
-    <section>
+  <main id="conteudo" class="container">
+    <section class="py-4">
       <h2>Nossos Serviços</h2>
       <p>Oferecemos banho e tosa para seu pet, com o cuidado e carinho que seu amigo merece. Todos os produtos utilizados são de alta qualidade, hipoalergênicos e adaptados de acordo com a necessidade do pet.</p>
     </section>
 
-    <section>
+    <section class="py-4">
       <h3>Banho e tosa</h3>
-      <div>
-        <h4>Sem tele-busca</h4>
-        <div><img src="./src/img/banho-tosa.jpg" alt="Cachorro pequeno tomando banho em uma banheira." width="380"></div>
-        <p>Banho completo com produtos de alta qualidade, hipoalergênicos e tosa higienica ou na tesoura, conforme preferência do humano. O pet deve ser levado e retirado no petshop.</p>
-        <span>R$ <strong>60,00</strong></span>
-      </div>
 
-      <div>
-        <h4>Com tele-busca</h4>
-        <div><img src="./src/img/tele-busca.jpg" alt="Cachorro dentro de um carro olhando pela janela." width="380"></div>
-        <p>Mesmo serviço e qualidade do banho e tosa, mas com a comodidade da busca e entrega do pet. O pet é transportado adequadamente dentro da caixa de transporte.</p>
-        <span>R$ <strong>80,00</strong></span>
+      <!-- nova div para posicionar o conteudo -->
+      <div class="d-flex justify-content-around my-4">
+
+        <div class="produtos-item p-4">
+          <div><img class="img-fluid rounded mb-2" src="./src/img/banho-tosa.jpg" alt="Cachorro pequeno tomando banho em uma banheira." width="380px"></div>
+          <div class="d-flex flex-column justify-content-around">
+            <h4>Sem tele-busca</h4>
+            <p>Banho completo com produtos de alta qualidade, hipoalergênicos e tosa higienica ou na tesoura, conforme preferência do humano. O pet deve ser levado e retirado no petshop.</p>
+            <span class="preco">A partir de R$ <strong>60,00</strong></span>
+          </div>
+        </div>
+
+        <div class="produtos-item p-4">
+          <div><img class="img-fluid rounded mb-2" src="./src/img/tele-busca.jpg" alt="Cachorro dentro de um carro olhando pela janela." width="380px"></div>
+          <div class="d-flex flex-column justify-content-around">
+            <h4>Com tele-busca</h4>
+            <p>Mesmo serviço e qualidade do banho e tosa, mas com a comodidade da busca e entrega do pet. O pet é transportado adequadamente dentro da caixa de transporte.</p>
+            <span class="preco">A partir de R$ <strong>80,00</strong></span>
+          </div>
+        </div>
+
       </div>
     </section>
   </main>
